@@ -540,7 +540,7 @@ header[role="header"] {
    ============================================ */
 .help-section-wrapper {
     padding: 120px 0;
-    background: #fff;
+    background: #f5f5f5;
 }
 
 .help-section-wrapper .section-title h2 {
@@ -876,7 +876,9 @@ header[role="header"] {
    ============================================ */
 .recognition-sec {
     position: relative;
-    padding: 160px 0 120px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
     overflow: hidden;
     background: #000;
 }
@@ -914,6 +916,7 @@ header[role="header"] {
 .section-content {
     position: relative;
     z-index: 10;
+    width: 100%;
 }
 
 .statement {
@@ -922,7 +925,7 @@ header[role="header"] {
     line-height: 1.4;
     color: #fff;
     letter-spacing: -1px;
-    margin-bottom: 80px;
+    margin-bottom: 0;
     max-width: 900px;
 }
 

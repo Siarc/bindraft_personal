@@ -330,22 +330,42 @@
                 });
             }
 
-            // Statement text animation on scroll
+            // Statement text animation on scroll with pinning
             const statement = document.getElementById('statement');
-            if (statement && typeof SplitType !== 'undefined') {
+            const recognitionSec = document.querySelector('.recognition-sec');
+            const sectionContent = recognitionSec.querySelector('.section-content');
+            
+            if (statement && recognitionSec && typeof SplitType !== 'undefined') {
                 const split = new SplitType(statement, { types: 'chars' });
-                gsap.set(split.chars, { opacity: 0.2 });
+                gsap.set(split.chars, { opacity: 0.1 }); // More dimmed start
+                gsap.set(statement, { y: 100, scale: 0.95 }); // Start deeper and smaller
 
-                gsap.to(split.chars, {
-                    opacity: 1,
-                    stagger: 0.02,
+                const tl = gsap.timeline({
                     scrollTrigger: {
-                        trigger: statement,
-                        start: 'top 80%',
-                        end: 'bottom 30%',
-                        scrub: 1,
+                        trigger: recognitionSec,
+                        start: 'top top',
+                        end: '+=200%', // Longer scroll for smoother pacing
+                        pin: true,
+                        scrub: 1.5, // Silkier scrub
+                        anticipatePin: 1,
                     }
                 });
+
+                // Smooth entry
+                tl.to(statement, {
+                    y: 0,
+                    scale: 1,
+                    duration: 0.5,
+                    ease: 'power2.out'
+                }, 0);
+
+                // Luxurious text reveal
+                tl.to(split.chars, {
+                    opacity: 1,
+                    stagger: 0.03, // Slightly slower stagger for more impact
+                    duration: 1.2,
+                    ease: 'none'
+                }, 0);
             }
         }
 
