@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 /* ============================================
-   DOTLOGICS HOMEPAGE - Custom Styles
-   Faithful recreation of dotlogics.com
+   BINDRAFT HOMEPAGE - Custom Styles
+   Faithful recreation of BindRaft project
    ============================================ */
 
 /* ---- Base / Global ---- */
@@ -398,7 +398,7 @@ header[role="header"] {
         display: none;
     }
 
-    .btn-contact {
+    .header .btn-contact {
         display: none !important;
     }
 
@@ -540,13 +540,13 @@ header[role="header"] {
    ============================================ */
 .help-section-wrapper {
     padding: 120px 0;
-    background: #000;
+    background: #fff;
 }
 
 .help-section-wrapper .section-title h2 {
     font-size: clamp(28px, 4vw, 48px);
     font-weight: 800;
-    color: #fff;
+    color: #212329;
     margin-bottom: 60px;
     letter-spacing: -1px;
 }

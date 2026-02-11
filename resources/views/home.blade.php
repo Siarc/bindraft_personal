@@ -19,7 +19,7 @@
                         <div class="row align-items-end">
                             <div class="col-xl-8 col-md-5">
                                 <div class="banner-cta-section">
-                                    <a href="#" class="banner-cta">Speak With a Digital Advisor</a>
+                                    <a href="#" class="btn-contact">Speak With a Digital Advisor</a>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-md-7">
@@ -295,20 +295,7 @@
                 <div class="statement split-text-animate" id="statement">
                     We help companies replace outdated systems with frictionless solutions built for today's changing digital landscape. Every effort is focused on measurable impact, helping teams work smarter, faster, and with greater clarity.
                 </div>
-                <div class="awards" id="awards" aria-labelledby="awards-label">
-                    <h4 id="awards-label">Awards & Recognition:</h4>
-                    <div class="award-logo-list" role="list" aria-label="Award logos">
-                        <div role="listitem" class="award-logo-placeholder">
-                            <svg width="100" height="40" viewBox="0 0 100 40" fill="none"><text x="50" y="25" font-family="sans-serif" font-weight="900" font-size="18" fill="#fff" text-anchor="middle">Clutch</text></svg>
-                        </div>
-                        <div role="listitem" class="award-logo-placeholder">
-                            <svg width="120" height="40" viewBox="0 0 120 40" fill="none"><text x="60" y="25" font-family="serif" font-weight="bold" font-size="16" fill="#fff" text-anchor="middle">DesignRush</text></svg>
-                        </div>
-                        <div role="listitem" class="award-logo-placeholder">
-                            <svg width="100" height="40" viewBox="0 0 100 40" fill="none"><text x="50" y="25" font-family="sans-serif" font-weight="bold" font-size="16" fill="#fff" text-anchor="middle">Best Design</text></svg>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>

@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>@yield('title', 'Accelerating Your Digital Transformation')</title>
-    <meta name="description" content="@yield('meta_description', 'Dotlogics is a global leader in IT services, customer experience design, business consulting, and innovative technology solutions. We help businesses make an impact.')">
-    <meta name="author" content="Dotlogics">
+    <meta name="description" content="@yield('meta_description', 'BindRaft is a global leader in IT services, customer experience design, business consulting, and innovative technology solutions. We help businesses make an impact.')">
+    <meta name="author" content="BindRaft">
     <meta name="theme-color" content="#000000">
 
     <!-- OG Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="dotlogics">
+    <meta property="og:site_name" content="bindraft">
     <meta property="og:title" content="Accelerating Your Digital Transformation">
-    <meta property="og:description" content="Dotlogics is a global leader in IT services, customer experience design, business consulting, and innovative technology solutions. We help businesses make an impact.">
+    <meta property="og:description" content="BindRaft is a global leader in IT services, customer experience design, business consulting, and innovative technology solutions. We help businesses make an impact.">
 
     <!-- Lenis CSS -->
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.11/dist/lenis.css">

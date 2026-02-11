@@ -3,8 +3,8 @@
         <div class="container">
             <div class="header">
                 <!-- Left Logo -->
-                <a href="/" class="logo white-logo homeLink" aria-label="Dotlogics Home">
-                    <div class="logo-text">dotlogics</div>
+                <a href="/" class="logo white-logo homeLink" aria-label="BindRaft Home">
+                    <div class="logo-text">bindraft</div>
                 </a>
 
                 <!-- Middle Nav -->

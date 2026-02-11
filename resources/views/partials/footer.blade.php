@@ -22,13 +22,13 @@
                     <div class="logo-section">
                         <div class="logo-footer">
                             <a class="homeLink" href="/">
-                                <div class="footer-logo-text">dotlogics</div>
+                                <div class="footer-logo-text">bindraft</div>
                             </a>
                         </div>
                         <p class="company-description">We help organizations simplify complex digital systems so their teams can move faster and smarter.</p>
                     </div>
                     <div class="footer-social">
-                        <a href="https://www.linkedin.com/company/dotlogics-inc-" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/company/bindraft-" target="_blank" rel="noopener noreferrer">
                             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.91869 18.2914H1.10398V6.54079H4.91869V18.2914ZM3.00928 4.93789C1.78946 4.93789 0.800049 3.97144 0.800049 2.80463C0.800049 2.24417 1.03281 1.70666 1.44712 1.31036C1.86143 0.914049 2.42336 0.691406 3.00928 0.691406C3.59521 0.691406 4.15713 0.914049 4.57144 1.31036C4.98575 1.70666 5.21851 2.24417 5.21851 2.80463C5.21851 3.97144 4.22869 4.93789 3.00928 4.93789ZM19.1959 18.2914H15.3894V12.5713C15.3894 11.208 15.3607 9.45978 13.4061 9.45978C11.4228 9.45978 11.1188 10.9409 11.1188 12.4731V18.2914H7.30823V6.54079H10.9669V8.14368H11.0203C11.5295 7.22045 12.7736 6.24614 14.6296 6.24614C18.4903 6.24614 19.2 8.67798 19.2 11.8366V18.2914H19.1959Z" fill="white"></path>
                             </svg>
@@ -71,12 +71,12 @@
     <div class="container">
         <div class="footer-bottom">
             <p class="copyright">
-                © {{ date('Y') }} Dotlogics. All Rights Reserved.
+                © {{ date('Y') }} BindRaft. All Rights Reserved.
             </p>
             <p class="contact-info">
                 Contact us at
-                <a href="mailto:contact@dotlogics.com" class="contact-link" target="_blank" rel="noopener noreferrer">
-                    contact@dotlogics.com
+                <a href="mailto:contact@bindraft.com" class="contact-link" target="_blank" rel="noopener noreferrer">
+                    contact@bindraft.com
                 </a>
             </p>
         </div>
