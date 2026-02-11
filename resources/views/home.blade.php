@@ -314,69 +314,7 @@
     </div>
 </section>
 
-<!-- Expert Insights -->
-<section>
-    <div class="container">
-        <div class="resources-wrapper">
-            <div class="redirect-header">
-                <div class="section-title">
-                    <h2 id="resources" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Expert Insights</h2>
-                </div>
-                <a href="#" class="redirect-link" aria-label="See all available resources">
-                    View All Resources
-                    <div class="arrow-vector" aria-hidden="true">
-                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1.70557H11M11 1.70557V11.7056M11 1.70557L1 11.7056" stroke="#212329" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </div>
-                </a>
-            </div>
-            <div class="resources-wrapp-inner">
-                <div class="row">
-                    <div class="col-md-4">
-                        <a href="#">
-                            <div class="resource-box">
-                                <div class="resource-card-content">
-                                    <h4>SEO & UX</h4>
-                                    <p>SEO and user experience: the powerful pair of online success.</p>
-                                </div>
-                                <div class="resoure-image">
-                                    <img src="https://placehold.co/400x250/111827/43C97B?text=SEO+%26+UX+Flow" alt="SEO & UX" class="img-fluid">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#">
-                            <div class="resource-box">
-                                <div class="resource-card-content">
-                                    <h4>Strategy & Planning</h4>
-                                    <p>Understanding gap analysis? Template, Examples, and Tools</p>
-                                </div>
-                                <div class="resoure-image">
-                                    <img src="https://placehold.co/400x250/111827/43C97B?text=Strategic+Gap+Analysis" alt="Strategy & Planning" class="img-fluid">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#">
-                            <div class="resource-box">
-                                <div class="resource-card-content">
-                                    <h4>Commerce & Experience</h4>
-                                    <p>Best Practices for Building Unified Commerce Experiences</p>
-                                </div>
-                                <div class="resoure-image">
-                                    <img src="https://placehold.co/400x250/111827/43C97B?text=Unified+Commerce" alt="Commerce & Experience" class="img-fluid">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 @endsection
 
