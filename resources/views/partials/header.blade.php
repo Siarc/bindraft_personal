@@ -49,11 +49,11 @@
             <div class="bg-white rounded-3xl p-8 shadow-2xl max-h-[80vh] overflow-y-auto">
                 <ul class="space-y-6">
                     <li><a href="#" class="block text-xl font-bold text-gray-900">Services</a></li>
-                    <li><a href="#" class="block text-xl font-bold text-gray-900">Case Studies</a></li>
-                    <li><a href="#" class="block text-xl font-bold text-gray-900">About</a></li>
-                    <li><a href="#" class="block text-xl font-bold text-gray-900">Careers</a></li>
-                    <li><a href="#" class="block text-xl font-bold text-gray-900">Resources</a></li>
-                    <li><a href="#" class="block text-xl font-bold text-[#43C97B]">Contact Us</a></li>
+                    <li><a href="#" class="block text-xl font-bold text-black">Case Studies</a></li>
+                    <li><a href="#" class="block text-xl font-bold text-black">About</a></li>
+                    <li><a href="#" class="block text-xl font-bold text-black">Careers</a></li>
+                    <li><a href="#" class="block text-xl font-bold text-black">Resources</a></li>
+                    <li><a href="#" class="block text-xl font-bold text-black">Contact Us</a></li>
                 </ul>
                 <div class="mt-10 flex flex-col gap-4">
                     <a href="#" class="w-full text-center py-4 rounded-2xl bg-black text-white font-bold hover:bg-[#43C97B] transition-colors">Get Started</a>
