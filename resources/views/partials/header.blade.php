@@ -22,7 +22,7 @@
 
             <!-- Right Side Buttons -->
             <div class="flex items-center gap-8">
-                <a href="#" class="hidden lg:inline-flex items-center justify-center bg-white text-black px-7 py-3 rounded-full text-sm font-bold hover:bg-[#43C97B] hover:text-white transition-all transform hover:-translate-y-px shadow-xl">
+                <a href="#" class="hidden lg:flex items-center justify-center bg-white text-black px-7 py-3 rounded-full text-sm font-bold hover:bg-[#43C97B] hover:text-white transition-all transform hover:-translate-y-px shadow-xl">
                     Get Started
                 </a>
                 
