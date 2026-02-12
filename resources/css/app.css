@@ -569,19 +569,19 @@ header[role="header"] {
     display: flex;
     align-items: center;
     overflow: hidden;
-    background: #000;
+    background: #f5f5f5;
 }
 
 .clip-container2 {
     position: absolute;
     inset: 0;
-    background: url('/images/recognition_background_1770839707725.png') center/cover no-repeat;
+    background: #f5f5f5;
 }
 
 .linear-grad {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.95) 100%);
+    background: transparent;
 }
 
 .radial-1 {
@@ -612,7 +612,7 @@ header[role="header"] {
     font-size: clamp(24px, 3.5vw, 42px);
     font-weight: 700;
     line-height: 1.4;
-    color: #fff;
+    color: #212329;
     letter-spacing: -1px;
     margin-bottom: 0;
     max-width: 900px;

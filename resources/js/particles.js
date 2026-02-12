@@ -1,8 +1,8 @@
 import * as THREE from 'three';
 
 /**
- * Particle Flow Effect using Three.js
- * Creates horizontal flowing particles with scroll-based speed and direction
+ * Dense Particle Wave Effect using Three.js
+ * Creates a flowing wave of particles from left to right with mouse interaction
  */
 export class ParticleWave {
     constructor(container) {
@@ -11,12 +11,12 @@ export class ParticleWave {
         this.camera = null;
         this.renderer = null;
         this.particles = null;
-        this.particleCount = 2000;
-        this.baseSpeed = 0.5; // Normal speed when not scrolling
+        this.particleCount = 8000; // Increased for density
+        this.baseSpeed = 0.8;
         this.currentSpeed = this.baseSpeed;
         this.scrollVelocity = 0;
         this.lastScrollY = 0;
-        this.scrollDirection = 1; // 1 = right, -1 = left
+        this.scrollDirection = 1;
         this.clock = new THREE.Clock();
 
         this.init();
@@ -45,13 +45,9 @@ export class ParticleWave {
         // Create particles
         this.createParticles();
 
-        // Add lights
-        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+        // Add lights for better visibility
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
         this.scene.add(ambientLight);
-
-        const pointLight = new THREE.PointLight(0x43C97B, 1);
-        pointLight.position.set(0, 0, 500);
-        this.scene.add(pointLight);
 
         // Event listeners
         window.addEventListener('resize', () => this.onResize());
@@ -65,21 +61,12 @@ export class ParticleWave {
 
         window.addEventListener('scroll', () => {
             const currentScrollY = window.scrollY;
-
-            // Calculate scroll velocity
             const scrollDelta = currentScrollY - this.lastScrollY;
             this.scrollVelocity = Math.abs(scrollDelta);
-
-            // Determine direction: positive delta = scrolling down = move right
-            // negative delta = scrolling up = move left
             this.scrollDirection = scrollDelta >= 0 ? 1 : -1;
-
-            // Update speed based on scroll velocity (max 10x normal speed)
-            this.currentSpeed = this.baseSpeed + Math.min(this.scrollVelocity * 0.2, this.baseSpeed * 9);
-
+            this.currentSpeed = this.baseSpeed + Math.min(this.scrollVelocity * 0.3, this.baseSpeed * 12);
             this.lastScrollY = currentScrollY;
 
-            // Reset to normal speed when scrolling stops
             clearTimeout(scrollTimeout);
             scrollTimeout = setTimeout(() => {
                 this.scrollVelocity = 0;
@@ -93,49 +80,63 @@ export class ParticleWave {
         const positions = [];
         const colors = [];
         const sizes = [];
-        const velocities = []; // Store individual particle velocities
+        const velocities = [];
+        const originalPositions = []; // Store original positions for wave pattern
 
         // Color palette (green to teal gradient)
-        const color1 = new THREE.Color(0x43C97B); // Your brand green
-        const color2 = new THREE.Color(0x20B2AA); // Teal
-        const color3 = new THREE.Color(0x00CED1); // Dark turquoise
+        const color1 = new THREE.Color(0x43C97B);
+        const color2 = new THREE.Color(0x20B2AA);
+        const color3 = new THREE.Color(0x00CED1);
+        const color4 = new THREE.Color(0x3CAEA3);
 
+        // Create particles in a dense wave formation flowing from left to right
         for (let i = 0; i < this.particleCount; i++) {
-            // Spread particles across the screen
+            // Create wave-like distribution
+            const wavePhase = (i / this.particleCount) * Math.PI * 4; // Multiple wave cycles
+            const waveAmplitude = 150;
+
+            // Start from left side and flow to right
             const x = (Math.random() - 0.5) * 2000;
-            const y = (Math.random() - 0.5) * 1000;
-            const z = (Math.random() - 0.5) * 1500;
+            const baseY = Math.sin(wavePhase) * waveAmplitude;
+            const y = baseY + (Math.random() - 0.5) * 300; // Add some randomness around the wave
+            const z = (Math.random() - 0.5) * 400; // Less depth variation for flatter wave
 
             positions.push(x, y, z);
+            originalPositions.push(x, y, z);
 
-            // Random color from palette
-            const colorChoice = Math.floor(Math.random() * 3);
-            const color = colorChoice === 0 ? color1 : (colorChoice === 1 ? color2 : color3);
+            // Vary colors across the wave
+            const colorMix = Math.random();
+            let color;
+            if (colorMix < 0.25) color = color1;
+            else if (colorMix < 0.5) color = color2;
+            else if (colorMix < 0.75) color = color3;
+            else color = color4;
+
             colors.push(color.r, color.g, color.b);
 
-            // Random sizes for depth effect
-            sizes.push(Math.random() * 6 + 3);
+            // Smaller, more uniform sizes for dense effect
+            sizes.push(Math.random() * 3 + 2);
 
-            // Random velocity variation for natural flow
-            velocities.push(Math.random() * 0.5 + 0.5);
+            // Slight velocity variation
+            velocities.push(Math.random() * 0.3 + 0.8);
         }
 
         geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
         geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
         geometry.setAttribute('size', new THREE.Float32BufferAttribute(sizes, 1));
 
-        // Store velocities for later use
         this.particleVelocities = velocities;
+        this.originalPositions = originalPositions;
 
         // Create material with circular particles
         const material = new THREE.PointsMaterial({
-            size: 5,
+            size: 4,
             vertexColors: true,
             transparent: true,
-            opacity: 0.8,
+            opacity: 0.85,
             sizeAttenuation: true,
             blending: THREE.AdditiveBlending,
-            map: this.createCircleTexture(), // Add circular texture
+            map: this.createCircleTexture(),
             depthWrite: false
         });
 
@@ -144,16 +145,16 @@ export class ParticleWave {
     }
 
     createCircleTexture() {
-        // Create a canvas to draw a circle
         const canvas = document.createElement('canvas');
         canvas.width = 32;
         canvas.height = 32;
         const ctx = canvas.getContext('2d');
 
-        // Draw a radial gradient circle
+        // Draw a soft radial gradient circle
         const gradient = ctx.createRadialGradient(16, 16, 0, 16, 16, 16);
         gradient.addColorStop(0, 'rgba(255, 255, 255, 1)');
-        gradient.addColorStop(0.5, 'rgba(255, 255, 255, 0.5)');
+        gradient.addColorStop(0.4, 'rgba(255, 255, 255, 0.8)');
+        gradient.addColorStop(0.7, 'rgba(255, 255, 255, 0.3)');
         gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
 
         ctx.fillStyle = gradient;
@@ -162,11 +163,6 @@ export class ParticleWave {
         const texture = new THREE.Texture(canvas);
         texture.needsUpdate = true;
         return texture;
-    }
-
-    onMouseMove(event) {
-        this.mouseX = (event.clientX - window.innerWidth / 2) * 0.1;
-        this.mouseY = (event.clientY - window.innerHeight / 2) * 0.1;
     }
 
     onResize() {
@@ -185,28 +181,50 @@ export class ParticleWave {
     animate() {
         requestAnimationFrame(() => this.animate());
 
+        const time = this.clock.getElapsedTime();
         const positions = this.particles.geometry.attributes.position.array;
 
-        // Move particles horizontally
+        // Animate particles
         for (let i = 0; i < this.particleCount; i++) {
             const i3 = i * 3;
 
-            // Apply movement based on current speed, direction, and particle velocity
-            const movement = this.currentSpeed * this.scrollDirection * this.particleVelocities[i];
-            positions[i3] += movement; // X position
+            // Get current position
+            let x = positions[i3];
+            let y = positions[i3 + 1];
+            const z = positions[i3 + 2];
 
-            // Wrap particles around when they go off screen
-            if (positions[i3] > 1000) {
-                positions[i3] = -1000;
-            } else if (positions[i3] < -1000) {
-                positions[i3] = 1000;
+            // Apply horizontal flow movement
+            const movement = this.currentSpeed * this.scrollDirection * this.particleVelocities[i];
+            x += movement;
+
+            // Add subtle wave motion for organic flow
+            const waveOffset = Math.sin(time * 0.5 + x * 0.01) * 0.5;
+            y += waveOffset;
+
+            // Wrap particles around horizontally
+            if (x > 1000) {
+                x = -1000;
+                // Reset to wave pattern when wrapping
+                y = this.originalPositions[i3 + 1] + (Math.random() - 0.5) * 100;
+            } else if (x < -1000) {
+                x = 1000;
+                y = this.originalPositions[i3 + 1] + (Math.random() - 0.5) * 100;
             }
+
+            // Keep Y within bounds
+            if (y > 600) y = -600;
+            if (y < -600) y = 600;
+
+            // Update positions
+            positions[i3] = x;
+            positions[i3 + 1] = y;
+            positions[i3 + 2] = z;
         }
 
         this.particles.geometry.attributes.position.needsUpdate = true;
 
-        // Subtle rotation for depth
-        this.particles.rotation.z += 0.0001;
+        // Very subtle rotation for depth
+        this.particles.rotation.z += 0.00005;
 
         this.renderer.render(this.scene, this.camera);
     }
@@ -219,3 +237,4 @@ export class ParticleWave {
         }
     }
 }
+
