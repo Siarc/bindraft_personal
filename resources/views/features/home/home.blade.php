@@ -4,8 +4,8 @@
 
     @include('features.home.partials.hero')
     @include('features.home.partials.how-we-help')
-    @include('features.home.partials.case-studies')
     @include('features.home.partials.recognition')
+    @include('features.home.partials.testimonials')
 
 @endsection
 
@@ -117,31 +117,11 @@
                 }]
             });
 
-            // Slick: GM Success Stories slider (mobile only)
-            function initGMSlider() {
-                if ($(window).width() <= 991) {
-                    if (!$('.gm-slider').hasClass('slick-initialized')) {
-                        $('.gm-slider').slick({
-                            dots: true,
-                            arrows: false,
-                            infinite: true,
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            responsive: [{
-                                breakpoint: 768,
-                                settings: { slidesToShow: 1, slidesToScroll: 1 }
-                            }]
-                        });
-                    }
-                } else {
-                    if ($('.gm-slider').hasClass('slick-initialized')) {
-                        $('.gm-slider').slick('unslick');
-                    }
-                }
-            }
-            initGMSlider();
-            $(window).on('resize', initGMSlider);
         }
     });
 </script>
+
+<!-- Testimonials Carousel Script -->
+<script src="{{ asset('js/testimonials.js') }}"></script>
+
 @endsection
