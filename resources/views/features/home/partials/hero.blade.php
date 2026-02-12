@@ -3,7 +3,7 @@
     <div class="hero">
         <!-- Background Image with Overlay -->
         <div class="absolute inset-0 z-0">
-            <img src="{{ asset('images/river_aerial_view_1770896842491.png') }}" alt="Flowing river" class="w-full h-full object-cover" />
+            <img src="{{ asset('images/river_2.jpg') }}" alt="Flowing river" class="w-full h-full object-cover" />
             <div class="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-cyan-800/85 to-blue-900/90"></div>
         </div>
 
