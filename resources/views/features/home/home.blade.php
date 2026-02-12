@@ -41,8 +41,8 @@
                 // Split text into lines
                 const text = heroTitle.textContent;
                 const words = text.split(/\s+/);
-                const line1 = 'We Create Digital Systems That Drive';
-                const line2 = 'Business Impact';
+                const line1 = 'Binding Ideas,';
+                const line2 = 'Rafting Through Innovation';
 
                 heroTitle.innerHTML = `<span class="line-wrapper"><span class="line">${line1}</span></span><span class="line-wrapper"><span class="line">${line2}</span></span>`;
 
@@ -53,6 +53,15 @@
                     stagger: 0.15,
                     ease: 'power4.out',
                     delay: 0.3
+                });
+
+                // Animate description paragraph
+                gsap.from('.hero-content p', {
+                    duration: 1,
+                    y: 30,
+                    opacity: 0,
+                    ease: 'power3.out',
+                    delay: 0.8
                 });
             }
 

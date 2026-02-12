@@ -21,8 +21,11 @@
                 <div class="hero-content-wraper">
                     <div class="hero-content">
                         <div class="banner-heading">
-                            <h1 class="reveal-lines" id="hero-title">We Create Digital Systems That Drive Business Impact</h1>
+                            <h1 class="reveal-lines" id="hero-title">Binding Ideas, Rafting Through Innovation</h1>
                         </div>
+                        <p class="mt-6 text-lg text-gray-300 max-w-3xl leading-relaxed opacity-90">
+                            Bindraft specializes in custom software development, mobile applications, AI agent development, and digital consultancy. We connect your vision to cutting-edge solutions with fluid expertise.
+                        </p>
                     </div>
 
                     <div class="trusted-by-section">
@@ -34,35 +37,34 @@
                             </div>
                             <div class="col-xl-4 col-md-7">
                                 <div class="trusted-by d-flex flex-column">
-                                    <span class="text-white mb-3 text-end">Trusted by:</span>
+                                    <span class="text-white mb-3 text-end">Our Tech Stack:</span>
                                     <div class="brands-marquee">
                                         <div class="brands-container scroll">
-                                            <!-- Actual Brand SVG Logos (Text-based for accuracy) -->
                                             <div class="brand-logo mb-2">
-                                                <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="50" y="20" font-family="serif" font-weight="bold" font-size="22" fill="#555" text-anchor="middle">BROWN</text></svg>
+                                                <svg width="120" height="30" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="60" y="20" font-family="sans-serif" font-weight="bold" font-size="20" fill="#fff" text-anchor="middle">LARAVEL</text></svg>
                                             </div>
                                             <div class="brand-logo mb-2">
-                                                <svg width="120" height="30" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="60" y="20" font-family="Arial, sans-serif" font-weight="900" font-size="20" fill="#555" text-anchor="middle">McDonald's</text></svg>
+                                                <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="50" y="20" font-family="sans-serif" font-weight="bold" font-size="20" fill="#fff" text-anchor="middle">REACT</text></svg>
                                             </div>
                                             <div class="brand-logo mb-2">
-                                                <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M40 5 Q50 35 60 5" stroke="#555" stroke-width="3" fill="none"/><text x="50" y="30" font-family="sans-serif" font-weight="bold" font-size="14" fill="#555" text-anchor="middle">Unilever</text></svg>
+                                                <svg width="120" height="30" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="60" y="20" font-family="sans-serif" font-weight="bold" font-size="20" fill="#fff" text-anchor="middle">TAILWIND</text></svg>
                                             </div>
                                             <div class="brand-logo">
-                                                <svg width="80" height="30" viewBox="0 0 80 30" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="40" y="20" font-family="sans-serif" font-weight="bold" font-size="20" fill="#555" text-anchor="middle">Clear</text></svg>
+                                                <svg width="80" height="30" viewBox="0 0 80 30" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="40" y="20" font-family="sans-serif" font-weight="bold" font-size="20" fill="#fff" text-anchor="middle">AWS</text></svg>
                                             </div>
                                         </div>
                                         <div class="brands-container scroll">
                                             <div class="brand-logo mb-2">
-                                                <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="50" y="20" font-family="serif" font-weight="bold" font-size="22" fill="#555" text-anchor="middle">BROWN</text></svg>
+                                                <svg width="120" height="30" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="60" y="20" font-family="sans-serif" font-weight="bold" font-size="20" fill="#fff" text-anchor="middle">LARAVEL</text></svg>
                                             </div>
                                             <div class="brand-logo mb-2">
-                                                <svg width="120" height="30" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="60" y="20" font-family="Arial, sans-serif" font-weight="900" font-size="20" fill="#555" text-anchor="middle">McDonald's</text></svg>
+                                                <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="50" y="20" font-family="sans-serif" font-weight="bold" font-size="20" fill="#fff" text-anchor="middle">REACT</text></svg>
                                             </div>
                                             <div class="brand-logo mb-2">
-                                                <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M40 5 Q50 35 60 5" stroke="#555" stroke-width="3" fill="none"/><text x="50" y="30" font-family="sans-serif" font-weight="bold" font-size="14" fill="#555" text-anchor="middle">Unilever</text></svg>
+                                                <svg width="120" height="30" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="60" y="20" font-family="sans-serif" font-weight="bold" font-size="20" fill="#fff" text-anchor="middle">TAILWIND</text></svg>
                                             </div>
                                             <div class="brand-logo">
-                                                <svg width="80" height="30" viewBox="0 0 80 30" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="40" y="20" font-family="sans-serif" font-weight="bold" font-size="20" fill="#555" text-anchor="middle">Clear</text></svg>
+                                                <svg width="80" height="30" viewBox="0 0 80 30" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="40" y="20" font-family="sans-serif" font-weight="bold" font-size="20" fill="#fff" text-anchor="middle">AWS</text></svg>
                                             </div>
                                         </div>
                                     </div>
