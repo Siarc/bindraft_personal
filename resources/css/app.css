@@ -243,10 +243,11 @@ header[role="header"] {
 .help-cards-list {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .help-card {
-    flex: 1;
+    flex: 0 0 calc((100% - 40px) / 3);
     position: relative;
     border-radius: 20px;
     overflow: hidden;
@@ -290,6 +291,11 @@ header[role="header"] {
 
 .help-card-icon {
     margin-bottom: auto;
+    transition: filter 0.4s ease;
+}
+
+.help-card:hover .help-card-icon {
+    filter: drop-shadow(0 0 12px rgba(67, 201, 123, 0.5));
 }
 
 .help-card-content-inner {
