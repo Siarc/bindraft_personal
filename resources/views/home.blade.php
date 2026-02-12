@@ -282,6 +282,9 @@
 <!-- Recognition / Statement Section -->
 <section>
     <div class="recognition-sec">
+        <!-- Particle Canvas Background -->
+        <div id="particle-canvas-container" style="position: absolute; inset: 0; z-index: 1;"></div>
+        
         <!-- Background -->
         <div class="clip-container2">
             <div class="linear-grad" aria-hidden="true"></div>
