@@ -250,15 +250,33 @@ header[role="header"] {
 .help-card {
     flex: 0 0 calc((100% - 40px) / 3);
     position: relative;
-    border-radius: 20px;
+    border-radius: 24px;
     overflow: hidden;
-    min-height: 550px;
-    background: #111;
-    transition: all 0.5s ease;
+    min-height: 520px;
+    background: #000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .help-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-8px);
+    border-color: rgba(67, 201, 123, 0.6);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(67, 201, 123, 0.15);
+}
+
+.help-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.8) 100%);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.help-card:hover::after {
+    opacity: 1;
 }
 
 .help-video-bg {
@@ -271,12 +289,14 @@ header[role="header"] {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.4;
-    transition: opacity 0.5s ease;
+    opacity: 0.7;
+    transition: transform 0.8s ease, opacity 0.5s ease;
+    filter: none;
 }
 
 .help-card:hover .help-video-bg img {
-    opacity: 0.6;
+    opacity: 0.9;
+    transform: scale(1.05);
 }
 
 .help-card-content {
@@ -284,46 +304,64 @@ header[role="header"] {
     z-index: 10;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 100%;
-    padding: 40px 30px;
-    min-height: 550px;
+    padding: 36px 32px;
 }
 
+/* Icon is now inside the button, but we might have a wrapper class still present or need to style the SVG inside CTA */
 .help-card-icon {
-    margin-bottom: auto;
-    transition: filter 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
 }
 
-.help-card:hover .help-card-icon {
-    filter: drop-shadow(0 0 12px rgba(67, 201, 123, 0.5));
+.help-card-icon svg {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.help-cta:hover .help-card-icon svg {
+    transform: scale(1.1) rotate(5deg);
 }
 
 .help-card-content-inner {
     margin-top: auto;
+    transform: translateY(0);
+    transition: transform 0.4s ease;
+}
+
+.help-card:hover .help-card-content-inner {
+    transform: translateY(-5px);
 }
 
 .help-card-content-inner h3 {
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 1.4;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.3;
     color: #fff;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     letter-spacing: -0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .help-cta {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    font-size: 14px;
-    font-weight: 600;
+    justify-content: flex-start;
+    gap: 0;
+    /* Gap handled by margin on icon */
+    font-size: 16px;
+    font-weight: 700;
     color: #fff;
-    padding: 12px 24px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 50px;
+    padding: 12px 20px 12px 16px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
     transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
 }
 
@@ -331,11 +369,24 @@ header[role="header"] {
     background: #43C97B;
     border-color: #43C97B;
     color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(67, 201, 123, 0.3);
 }
 
-.help-cta span {
+.arrow-icon {
     display: flex;
     align-items: center;
+    margin-left: auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.help-cta:hover .arrow-icon {
+    background: #fff;
+    color: #43C97B;
+    transform: translateX(4px);
 }
 
 
