@@ -575,6 +575,7 @@ header[role="header"] {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
     background: #f5f5f5;
 }
@@ -621,8 +622,9 @@ header[role="header"] {
     line-height: 1.4;
     color: #212329;
     letter-spacing: -1px;
-    margin-bottom: 0;
+    margin: 0 auto;
     max-width: 900px;
+    text-align: center;
 }
 
 .statement .char {
