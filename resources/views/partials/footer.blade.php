@@ -68,17 +68,19 @@
     </div>
 
     <!-- Footer Bottom -->
-    <div class="container">
-        <div class="footer-bottom">
-            <p class="copyright">
-                © {{ date('Y') }} BindRaft. All Rights Reserved.
-            </p>
-            <p class="contact-info">
-                Contact us at
-                <a href="mailto:contact@bindraft.com" class="contact-link" target="_blank" rel="noopener noreferrer">
-                    contact@bindraft.com
-                </a>
-            </p>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <p class="copyright">
+                    © {{ date('Y') }} BindRaft. All Rights Reserved.
+                </p>
+                <p class="contact-info">
+                    Contact us at
+                    <a href="mailto:contact@bindraft.com" class="contact-link" target="_blank" rel="noopener noreferrer">
+                        contact@bindraft.com
+                    </a>
+                </p>
+            </div>
         </div>
     </div>
 </footer>

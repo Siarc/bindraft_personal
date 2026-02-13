@@ -899,14 +899,16 @@ footer .btn-contact:hover {
 
 /* Footer Bottom */
 .footer-bottom {
+    background: #111;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 24px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    background: #111;
-    flex-wrap: wrap;
-    gap: 16px;
+    width: 100%;
 }
 
 .copyright {
@@ -999,6 +1001,13 @@ footer .btn-contact:hover {
     .footer-links {
         gap: 40px;
     }
+
+    .footer-bottom-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1039,10 +1048,6 @@ footer .btn-contact:hover {
         font-size: 32px;
     }
 
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
 }
 
 /* AOS defaults */
