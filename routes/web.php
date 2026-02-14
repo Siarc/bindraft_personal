@@ -17,3 +17,11 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('features.contact.contact');
 })->name('contact');
+
+Route::get('/privacy-policy', function () {
+    return view('features.legal.privacy');
+})->name('privacy.policy');
+
+Route::get('/terms-of-use', function () {
+    return view('features.legal.terms');
+})->name('terms.use');

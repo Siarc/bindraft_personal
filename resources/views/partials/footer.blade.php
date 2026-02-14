@@ -57,8 +57,8 @@
                     <div class="nav-column">
                         <h4>Legal</h4>
                         <ul class="nav-list">
-                            <li><a href="#" class="nav-link">Privacy Policy</a></li>
-                            <li><a href="#" class="nav-link">Terms of Use</a></li>
+                            <li><a href="{{ route('privacy.policy') }}" class="nav-link">Privacy Policy</a></li>
+                            <li><a href="{{ route('terms.use') }}" class="nav-link">Terms of Use</a></li>
                             <li><a href="#" class="nav-link">Cookie Policy</a></li>
                         </ul>
                     </div>
