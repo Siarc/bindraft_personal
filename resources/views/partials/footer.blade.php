@@ -28,11 +28,17 @@
                         <p class="company-description">We help organizations simplify complex digital systems so their teams can move faster and smarter.</p>
                     </div>
                     <div class="footer-social">
-                        <a href="https://www.linkedin.com/company/bindraft-" target="_blank" rel="noopener noreferrer">
-                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.91869 18.2914H1.10398V6.54079H4.91869V18.2914ZM3.00928 4.93789C1.78946 4.93789 0.800049 3.97144 0.800049 2.80463C0.800049 2.24417 1.03281 1.70666 1.44712 1.31036C1.86143 0.914049 2.42336 0.691406 3.00928 0.691406C3.59521 0.691406 4.15713 0.914049 4.57144 1.31036C4.98575 1.70666 5.21851 2.24417 5.21851 2.80463C5.21851 3.97144 4.22869 4.93789 3.00928 4.93789ZM19.1959 18.2914H15.3894V12.5713C15.3894 11.208 15.3607 9.45978 13.4061 9.45978C11.4228 9.45978 11.1188 10.9409 11.1188 12.4731V18.2914H7.30823V6.54079H10.9669V8.14368H11.0203C11.5295 7.22045 12.7736 6.24614 14.6296 6.24614C18.4903 6.24614 19.2 8.67798 19.2 11.8366V18.2914H19.1959Z" fill="white"></path>
+                        <a href="https://github.com/bindraft" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                             </svg>
-                            <span>Follow us on LinkedIn</span>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.facebook.com/BindRaft/" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                            <span>Facebook</span>
                         </a>
                     </div>
                 </div>
@@ -41,17 +47,14 @@
                     <div class="nav-column">
                         <h4>Services</h4>
                         <ul>
-                            <li><a href="#" class="nav-link">Website & Digital Experience</a></li>
-                            <li><a href="#" class="nav-link">Technology Solutions</a></li>
-                            <li><a href="#" class="nav-link">AI Agents and Automation</a></li>
+                            <li><a href="{{ route('services') }}" class="nav-link">Services</a></li>
                         </ul>
                     </div>
                     <div class="nav-column">
                         <h4>Company</h4>
                         <ul>
-                            <li><a href="#" class="nav-link">About</a></li>
-                            <li><a href="#" class="nav-link">Case Studies</a></li>
-                            <li><a href="#" class="nav-link">Contact</a></li>
+                            <li><a href="{{ route('about') }}" class="nav-link">About</a></li>
+                            <li><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
                         </ul>
                     </div>
                     <div class="nav-column">
@@ -59,7 +62,7 @@
                         <ul class="nav-list">
                             <li><a href="{{ route('privacy.policy') }}" class="nav-link">Privacy Policy</a></li>
                             <li><a href="{{ route('terms.use') }}" class="nav-link">Terms of Use</a></li>
-                            <li><a href="#" class="nav-link">Cookie Policy</a></li>
+                            <li><a href="{{ route('cookie.policy') }}" class="nav-link">Cookie Policy</a></li>
                         </ul>
                     </div>
                 </div>

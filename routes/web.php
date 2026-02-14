@@ -25,3 +25,7 @@ Route::get('/privacy-policy', function () {
 Route::get('/terms-of-use', function () {
     return view('features.legal.terms');
 })->name('terms.use');
+
+Route::get('/cookie-policy', function () {
+    return view('features.legal.cookies');
+})->name('cookie.policy');
