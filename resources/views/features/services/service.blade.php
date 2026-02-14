@@ -5,11 +5,23 @@
 @section('content')
 
 <!-- Hero Section (Full 1920x1080 style) -->
-<section class="service-hero">
-    <!-- Animated Background Overlay (Optional particles or waves can be added here) -->
-    <div class="service-hero-overlay"></div>
+<section class="service-hero relative">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+        <img src="{{ asset('images/cosmos.jpg') }}" alt="Service Abstract" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-cyan-800/85 to-blue-900/90"></div>
+    </div>
+    <!-- Animated Wave Overlays -->
+    <div class="absolute inset-0 z-10 pointer-events-none">
+        <svg class="absolute bottom-0 w-full h-32" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path id="wave1" fill="rgba(6, 182, 212, 0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,101.3C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" />
+        </svg>
+        <svg class="absolute bottom-0 w-full h-32" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path id="wave2" fill="rgba(34, 211, 238, 0.1)" d="M0,224L48,213.3C96,203,192,181,288,186.7C384,192,480,224,576,224C672,224,768,192,864,165.3C960,139,1056,117,1152,122.7C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" />
+        </svg>
+    </div>
     
-    <div class="service-hero-content">
+    <div class="service-hero-content relative z-10">
         <div data-aos="fade-up" data-aos-duration="1000">
             <h1>Our Services</h1>
             <p>Comprehensive software solutions designed to drive your business forward. From concept to deployment, we navigate every aspect of your digital journey.</p>
