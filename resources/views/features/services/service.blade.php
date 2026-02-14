@@ -20,8 +20,6 @@
 <!-- Content Section (Overlapping Header) -->
 <div class="services-page-wrapper">
     <div class="services-content-container">
-        
-        
 
         <!-- grid of cards -->
         <div class="services-grid">
@@ -111,7 +109,7 @@
             </div>
         </div> <!-- end grid -->
 
-<!-- Our Process Section -->
+        <!-- Our Process Section -->
         <div class="process-section">
             <div class="process-header" data-aos="fade-up">
                 <h2>Our Process</h2>
@@ -153,6 +151,113 @@
                         <h3>Launch & Support</h3>
                         <p>We deploy your solution and provide ongoing support, maintenance, and optimization to ensure continued success.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOGO MARQUEE SECTION -->
+        <div class="logo-marquee-section" data-aos="fade-up">
+            <div class="logo-marquee-header">
+                <h2>Technologies We Use</h2>
+            </div>
+            <!-- ROW 1: Frontend & Core Backend -->
+            <div class="marquee-container">
+                <div class="marquee-track">
+                    <!-- Set 1 -->
+                    <div class="marquee-chip"><span class="chip-tech">React</span> <span class="chip-dot">•</span> <span class="chip-type">Frontend Library</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Next.js</span> <span class="chip-dot">•</span> <span class="chip-type">React Framework</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">TypeScript</span> <span class="chip-dot">•</span> <span class="chip-type">Language</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">JavaScript (ES6+)</span> <span class="chip-dot">•</span> <span class="chip-type">Language</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">HTML5</span> <span class="chip-dot">•</span> <span class="chip-type">Markup</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">CSS3</span> <span class="chip-dot">•</span> <span class="chip-type">Styling</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Tailwind CSS</span> <span class="chip-dot">•</span> <span class="chip-type">Utility-First CSS</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Framer Motion</span> <span class="chip-dot">•</span> <span class="chip-type">Animation</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Alpine.js</span> <span class="chip-dot">•</span> <span class="chip-type">Lightweight JS</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Node.js</span> <span class="chip-dot">•</span> <span class="chip-type">Backend Runtime</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Express.js</span> <span class="chip-dot">•</span> <span class="chip-type">Backend Framework</span></div>
+
+                    <!-- Duplicate Set 1 -->
+                    <div class="marquee-chip"><span class="chip-tech">React</span> <span class="chip-dot">•</span> <span class="chip-type">Frontend Library</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Next.js</span> <span class="chip-dot">•</span> <span class="chip-type">React Framework</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">TypeScript</span> <span class="chip-dot">•</span> <span class="chip-type">Language</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">JavaScript (ES6+)</span> <span class="chip-dot">•</span> <span class="chip-type">Language</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">HTML5</span> <span class="chip-dot">•</span> <span class="chip-type">Markup</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">CSS3</span> <span class="chip-dot">•</span> <span class="chip-type">Styling</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Tailwind CSS</span> <span class="chip-dot">•</span> <span class="chip-type">Utility-First CSS</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Framer Motion</span> <span class="chip-dot">•</span> <span class="chip-type">Animation</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Alpine.js</span> <span class="chip-dot">•</span> <span class="chip-type">Lightweight JS</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Node.js</span> <span class="chip-dot">•</span> <span class="chip-type">Backend Runtime</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Express.js</span> <span class="chip-dot">•</span> <span class="chip-type">Backend Framework</span></div>
+                </div>
+            </div>
+
+            <!-- ROW 2: Backend, DB, Cloud (Reverse Scroll) -->
+            <div class="marquee-container">
+                <div class="marquee-track reverse">
+                    <!-- Set 2 -->
+                    <div class="marquee-chip"><span class="chip-tech">Python</span> <span class="chip-dot">•</span> <span class="chip-type">Backend Language</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Laravel</span> <span class="chip-dot">•</span> <span class="chip-type">PHP Framework</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">PHP</span> <span class="chip-dot">•</span> <span class="chip-type">Backend Language</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">REST API</span> <span class="chip-dot">•</span> <span class="chip-type">API Architecture</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">GraphQL</span> <span class="chip-dot">•</span> <span class="chip-type">API Query Language</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">PostgreSQL</span> <span class="chip-dot">•</span> <span class="chip-type">Relational Database</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">MySQL</span> <span class="chip-dot">•</span> <span class="chip-type">Relational Database</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">MongoDB</span> <span class="chip-dot">•</span> <span class="chip-type">NoSQL Database</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Redis</span> <span class="chip-dot">•</span> <span class="chip-type">Caching & In-Memory Store</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Firebase</span> <span class="chip-dot">•</span> <span class="chip-type">Realtime Database</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">AWS</span> <span class="chip-dot">•</span> <span class="chip-type">Cloud Infrastructure</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Google Cloud</span> <span class="chip-dot">•</span> <span class="chip-type">Cloud Platform</span></div>
+
+                    <!-- Duplicate Set 2 -->
+                    <div class="marquee-chip"><span class="chip-tech">Python</span> <span class="chip-dot">•</span> <span class="chip-type">Backend Language</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Laravel</span> <span class="chip-dot">•</span> <span class="chip-type">PHP Framework</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">PHP</span> <span class="chip-dot">•</span> <span class="chip-type">Backend Language</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">REST API</span> <span class="chip-dot">•</span> <span class="chip-type">API Architecture</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">GraphQL</span> <span class="chip-dot">•</span> <span class="chip-type">API Query Language</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">PostgreSQL</span> <span class="chip-dot">•</span> <span class="chip-type">Relational Database</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">MySQL</span> <span class="chip-dot">•</span> <span class="chip-type">Relational Database</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">MongoDB</span> <span class="chip-dot">•</span> <span class="chip-type">NoSQL Database</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Redis</span> <span class="chip-dot">•</span> <span class="chip-type">Caching & In-Memory Store</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Firebase</span> <span class="chip-dot">•</span> <span class="chip-type">Realtime Database</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">AWS</span> <span class="chip-dot">•</span> <span class="chip-type">Cloud Infrastructure</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Google Cloud</span> <span class="chip-dot">•</span> <span class="chip-type">Cloud Platform</span></div>
+                </div>
+            </div>
+
+            <!-- ROW 3: DevOps, AI, Tools -->
+            <div class="marquee-container" style="margin-bottom:0;">
+                <div class="marquee-track">
+                    <!-- Set 3 -->
+                    <div class="marquee-chip"><span class="chip-tech">Docker</span> <span class="chip-dot">•</span> <span class="chip-type">Containerization</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Kubernetes</span> <span class="chip-dot">•</span> <span class="chip-type">Container Orchestration</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">GitHub Actions</span> <span class="chip-dot">•</span> <span class="chip-type">CI/CD</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Nginx</span> <span class="chip-dot">•</span> <span class="chip-type">Web Server</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Vercel</span> <span class="chip-dot">•</span> <span class="chip-type">Deployment Platform</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">OpenAI</span> <span class="chip-dot">•</span> <span class="chip-type">AI/ML APIs</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">TensorFlow</span> <span class="chip-dot">•</span> <span class="chip-type">ML Framework</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">LangChain</span> <span class="chip-dot">•</span> <span class="chip-type">LLM Framework</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Hugging Face</span> <span class="chip-dot">•</span> <span class="chip-type">AI Models</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Git</span> <span class="chip-dot">•</span> <span class="chip-type">Version Control</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">GitHub</span> <span class="chip-dot">•</span> <span class="chip-type">Code Hosting</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Jira</span> <span class="chip-dot">•</span> <span class="chip-type">Project Management</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Figma</span> <span class="chip-dot">•</span> <span class="chip-type">UI/UX Design</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Postman</span> <span class="chip-dot">•</span> <span class="chip-type">API Testing</span></div>
+
+                    <!-- Duplicate Set 3 -->
+                    <div class="marquee-chip"><span class="chip-tech">Docker</span> <span class="chip-dot">•</span> <span class="chip-type">Containerization</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Kubernetes</span> <span class="chip-dot">•</span> <span class="chip-type">Container Orchestration</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">GitHub Actions</span> <span class="chip-dot">•</span> <span class="chip-type">CI/CD</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Nginx</span> <span class="chip-dot">•</span> <span class="chip-type">Web Server</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Vercel</span> <span class="chip-dot">•</span> <span class="chip-type">Deployment Platform</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">OpenAI</span> <span class="chip-dot">•</span> <span class="chip-type">AI/ML APIs</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">TensorFlow</span> <span class="chip-dot">•</span> <span class="chip-type">ML Framework</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">LangChain</span> <span class="chip-dot">•</span> <span class="chip-type">LLM Framework</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Hugging Face</span> <span class="chip-dot">•</span> <span class="chip-type">AI Models</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Git</span> <span class="chip-dot">•</span> <span class="chip-type">Version Control</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">GitHub</span> <span class="chip-dot">•</span> <span class="chip-type">Code Hosting</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Jira</span> <span class="chip-dot">•</span> <span class="chip-type">Project Management</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Figma</span> <span class="chip-dot">•</span> <span class="chip-type">UI/UX Design</span></div>
+                    <div class="marquee-chip"><span class="chip-tech">Postman</span> <span class="chip-dot">•</span> <span class="chip-type">API Testing</span></div>
                 </div>
             </div>
         </div>
