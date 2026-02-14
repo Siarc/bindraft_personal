@@ -60,13 +60,20 @@
             <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                 <div class="card-title">AI Agent Development</div>
                 <ul class="offer-list">
-                    <li>Custom AI chatbots and assistants</li>
-                    <li>Machine learning model development</li>
-                    <li>Natural language processing</li>
-                    <li>Computer vision solutions</li>
-                    <li>Predictive analytics</li>
-                    <li>AI-powered automation</li>
+                    <li>Custom AI model training</li>
+                    <li>Intelligent chatbots & virtual assistants</li>
+                    <li>Predictive analytics engines</li>
+                    <li>Natural Language Processing (NLP)</li>
+                    <li>Computer Vision solutions</li>
+                    <li>Automated workflow systems</li>
                 </ul>
+                <div class="service-separator">
+                    <ul class="offer-list">
+                        <li>OpenAI & LLM integration</li>
+                        <li>Data pipeline engineering</li>
+                        <li>AI ethics & compliance consulting</li>
+                    </ul>
+                </div>
             </div>
 
             <!-- FRONTEND excellence -->
