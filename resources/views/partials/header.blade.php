@@ -20,9 +20,8 @@
                 <li><a href="#" class="hover:text-white transition-colors">Resources</a></li>
             </ul>
 
-            <!-- Right Side Buttons -->
             <div class="flex items-center gap-8">
-                <a href="#" class="hidden lg:flex items-center justify-center bg-white text-black px-7 py-3 rounded-full text-sm font-bold hover:bg-[#43C97B] hover:text-white transition-all transform hover:-translate-y-px shadow-xl">
+                <a href="{{ route('contact') }}" class="hidden lg:flex items-center justify-center bg-white text-black px-7 py-3 rounded-full text-sm font-bold hover:bg-[#43C97B] hover:text-white transition-all transform hover:-translate-y-px shadow-xl">
                     Contact Us
                 </a>
                 
@@ -53,10 +52,10 @@
                     <li><a href="{{ route('about') }}" class="block text-xl font-bold text-black">About</a></li>
                     <li><a href="#" class="block text-xl font-bold text-black">Careers</a></li>
                     <li><a href="#" class="block text-xl font-bold text-black">Resources</a></li>
-                    <li><a href="#" class="block text-xl font-bold text-black">Contact Us</a></li>
+                    <li><a href="{{ route('contact') }}" class="block text-xl font-bold text-black">Contact Us</a></li>
                 </ul>
                 <div class="mt-10 flex flex-col gap-4">
-                    <a href="#" class="w-full text-center py-4 rounded-2xl bg-black text-white font-bold hover:bg-[#43C97B] transition-colors">Get Started</a>
+                    <a href="{{ route('contact') }}" class="w-full text-center py-4 rounded-2xl bg-black text-white font-bold hover:bg-[#43C97B] transition-colors">Contact Us</a>
                 </div>
             </div>
         </div>
