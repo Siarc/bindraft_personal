@@ -1,0 +1,276 @@
+/* ============================================
+   SERVICE FEATURE STYLES
+   ============================================ */
+
+/* Wrapper for the content below hero */
+.services-page-wrapper {
+    background: #f6f9fc;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.services-content-container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 2.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    padding: 4rem 3rem;
+    position: relative;
+    top: -100px;
+    /* Overlap with hero slightly for professional look */
+    z-index: 10;
+}
+
+/* ----------------------------------------------
+   HERO SECTION (Adapted from Home but unique)
+   ---------------------------------------------- */
+.service-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    padding-bottom: 150px;
+    /* Space for the overlap */
+    overflow: hidden;
+    background: #0a2540;
+    /* Fallback */
+    /* Deep professional gradient */
+    background: linear-gradient(135deg, #0a2540 0%, #0f3057 50%, #005b96 100%);
+}
+
+.service-hero-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: radial-gradient(#ffffff 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+.service-hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 900px;
+    padding: 0 20px;
+    color: white;
+}
+
+.service-hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    background: linear-gradient(to right, #ffffff, #a5b4fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.service-hero p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ----------------------------------------------
+   SERVICES GRID
+   ---------------------------------------------- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.service-card {
+    background: #ffffff;
+    border: 1px solid #e9f0f5;
+    border-radius: 2rem;
+    padding: 2.5rem 2rem;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    border-color: #cbdae9;
+    box-shadow: 0 20px 40px -10px rgba(14, 65, 110, 0.15);
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #0a2540;
+}
+
+.card-title::before {
+    content: '▍';
+    font-size: 1.8rem;
+    color: #2670b7;
+    line-height: 0;
+}
+
+/* Details list */
+.offer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.offer-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    color: #425466;
+    line-height: 1.5;
+}
+
+.offer-list li::before {
+    content: "✓";
+    color: #2670b7;
+    font-weight: 700;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.service-separator {
+    margin-top: 1.5rem;
+    border-top: 1px solid #edf2f7;
+    padding-top: 1.5rem;
+}
+
+/* ----------------------------------------------
+   FEATURED BLOCKS (Removed from view but kept styles just in case or for potential re-use)
+   ---------------------------------------------- */
+.featured-block {
+    background-color: #f8fafc;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.featured-block:hover {
+    border-color: #cbd5e1;
+    background-color: #fff;
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+}
+
+.featured-block .text h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+    color: #0f172a;
+}
+
+.featured-block .text p {
+    color: #475569;
+    max-width: 600px;
+    margin-bottom: 0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.btn-service {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #0f172a;
+    color: white !important;
+    font-weight: 600;
+    padding: 1rem 2.5rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    border: 1px solid transparent;
+}
+
+.btn-service:hover {
+    background: #1e293b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-service::after {
+    content: " →";
+    font-size: 1.2rem;
+    line-height: 1;
+    margin-left: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+.btn-service:hover::after {
+    transform: translateX(4px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .service-hero h1 {
+        font-size: 3rem;
+    }
+
+    .services-content-container {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .services-content-container {
+        padding: 2rem 1.5rem;
+        border-radius: 1.5rem;
+        top: -50px;
+        /* Reduce overlap on mobile */
+    }
+
+    .service-hero {
+        min-height: 80vh;
+        padding-bottom: 80px;
+    }
+
+    .featured-block {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .btn-service {
+        width: 100%;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}

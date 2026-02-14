@@ -13,7 +13,7 @@
 
             <!-- Desktop Menu -->
             <ul class="hidden lg:flex items-center gap-10 text-[14px] font-semibold text-white/70">
-                <li><a href="#" class="hover:text-white transition-colors">Services</a></li>
+                <li><a href="{{ route('services') }}" class="hover:text-white transition-colors">Services</a></li>
                 <li><a href="#" class="hover:text-white transition-colors">Case Studies</a></li>
                 <li><a href="#" class="hover:text-white transition-colors">About</a></li>
                 <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
@@ -48,7 +48,7 @@
              style="display: none;">
             <div class="bg-white rounded-3xl p-8 shadow-2xl max-h-[80vh] overflow-y-auto">
                 <ul class="space-y-6">
-                    <li><a href="#" class="block text-xl font-bold text-gray-900">Services</a></li>
+                    <li><a href="{{ route('services') }}" class="block text-xl font-bold text-gray-900">Services</a></li>
                     <li><a href="#" class="block text-xl font-bold text-black">Case Studies</a></li>
                     <li><a href="#" class="block text-xl font-bold text-black">About</a></li>
                     <li><a href="#" class="block text-xl font-bold text-black">Careers</a></li>
