@@ -20,6 +20,9 @@
 <!-- Content Section (Overlapping Header) -->
 <div class="services-page-wrapper">
     <div class="services-content-container">
+        
+        
+
         <!-- grid of cards -->
         <div class="services-grid">
             <!-- ENTERPRISE & BACKEND block -->
@@ -108,7 +111,51 @@
             </div>
         </div> <!-- end grid -->
 
+<!-- Our Process Section -->
+        <div class="process-section">
+            <div class="process-header" data-aos="fade-up">
+                <h2>Our Process</h2>
+                <p>A proven methodology that delivers results</p>
+            </div>
+            
+            <div class="process-steps">
+                <!-- Step 01 -->
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Discovery & Planning</h3>
+                        <p>We start by understanding your goals, challenges, and requirements through detailed consultations and research.</p>
+                    </div>
+                </div>
 
+                <!-- Step 02 -->
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Design & Strategy</h3>
+                        <p>Our team creates comprehensive designs and technical strategies that align with your business objectives.</p>
+                    </div>
+                </div>
+
+                <!-- Step 03 -->
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Development & Testing</h3>
+                        <p>We build your solution using agile methodologies, with continuous testing and quality assurance throughout.</p>
+                    </div>
+                </div>
+
+                <!-- Step 04 -->
+                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Launch & Support</h3>
+                        <p>We deploy your solution and provide ongoing support, maintenance, and optimization to ensure continued success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div> <!-- end container -->
 </div>

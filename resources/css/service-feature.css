@@ -274,3 +274,135 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* ----------------------------------------------
+   PROCESS SECTION (Timeline / Steps)
+   ---------------------------------------------- */
+.process-section {
+    margin-bottom: 4rem;
+    position: relative;
+    padding-bottom: 2rem;
+    border-bottom: 1px dashed #e2e8f0;
+}
+
+.process-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.process-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #0a2540;
+    letter-spacing: -0.02em;
+}
+
+.process-header p {
+    font-size: 1.1rem;
+    color: #425466;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    position: relative;
+    padding-top: 1rem;
+}
+
+.process-step {
+    position: relative;
+    text-align: left;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: transparent;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid transparent;
+}
+
+.process-step:hover {
+    background: #ffffff;
+    border-color: #e2e8f0;
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+    transform: translateY(-5px);
+}
+
+.step-number {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1;
+    color: #e2e8f0;
+    /* Very light slate default */
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+}
+
+.process-step:hover .step-number {
+    color: #0a2540;
+    /* Darkens on hover */
+    transform: scale(1.1) translateX(5px);
+}
+
+/* Fun animated dot */
+.step-number::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    /* Adjust position */
+    width: 8px;
+    height: 8px;
+    background: #38bdf8;
+    /* Light blue accent */
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.3s ease 0.1s;
+}
+
+.process-step:hover .step-number::after {
+    opacity: 1;
+    transform: scale(1);
+    right: -25px;
+    /* Pops out */
+}
+
+.step-content h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #0f172a;
+}
+
+.step-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #64748b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .process-steps {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .process-step {
+        text-align: left;
+        padding: 1rem;
+        background: #f8fafc;
+        /* Slight bg on mobile for separation */
+        border: 1px solid #f1f5f9;
+    }
+
+    .process-step:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
