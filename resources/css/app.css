@@ -1,13 +1,7 @@
 @import "tailwindcss";
-@import "./testimonials.css";
 @import "./header.css";
-@import "./hero.css";
-@import "./how-we-help.css";
-@import "./case-studies.css";
-@import "./great-minds.css";
-@import "./recognition.css";
-@import "./expert-insights.css";
 @import "./footer.css";
+@import "./home-feature.css";
 @import "./service-feature.css";
 
 /* ============================================
