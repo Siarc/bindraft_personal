@@ -15,7 +15,7 @@
             <ul class="hidden lg:flex items-center gap-10 text-[14px] font-semibold text-white/70">
                 <li><a href="{{ route('services') }}" class="hover:text-white transition-colors">Services</a></li>
                 <li><a href="#" class="hover:text-white transition-colors">Case Studies</a></li>
-                <li><a href="#" class="hover:text-white transition-colors">About</a></li>
+                <li><a href="{{ route('about') }}" class="hover:text-white transition-colors">About</a></li>
                 <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
                 <li><a href="#" class="hover:text-white transition-colors">Resources</a></li>
             </ul>
@@ -50,7 +50,7 @@
                 <ul class="space-y-6">
                     <li><a href="{{ route('services') }}" class="block text-xl font-bold text-gray-900">Services</a></li>
                     <li><a href="#" class="block text-xl font-bold text-black">Case Studies</a></li>
-                    <li><a href="#" class="block text-xl font-bold text-black">About</a></li>
+                    <li><a href="{{ route('about') }}" class="block text-xl font-bold text-black">About</a></li>
                     <li><a href="#" class="block text-xl font-bold text-black">Careers</a></li>
                     <li><a href="#" class="block text-xl font-bold text-black">Resources</a></li>
                     <li><a href="#" class="block text-xl font-bold text-black">Contact Us</a></li>

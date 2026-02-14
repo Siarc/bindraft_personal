@@ -1,0 +1,251 @@
+/* ============================================
+   ABOUT FEATURE STYLES
+   ============================================ */
+
+/* Wrapper for the content below hero */
+.about-page-wrapper {
+    background: #f6f9fc;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    padding: 120px 0;
+}
+
+.about-content-container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    position: relative;
+    z-index: 10;
+}
+
+/* ----------------------------------------------
+   HERO SECTION
+   ---------------------------------------------- */
+.about-hero {
+    position: relative;
+    min-height: 100vh;
+    /* Slightly shorter than home/services */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+    overflow: hidden;
+    background: #0a2540;
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 900px;
+    padding: 0 20px;
+    color: white;
+}
+
+.about-hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    background: linear-gradient(to right, #ffffff, #a5b4fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-hero p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ----------------------------------------------
+   SECTIONS
+   ---------------------------------------------- */
+.about-section {
+    margin-bottom: 6rem;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #0a2540;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.about-text-block {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #425466;
+    margin-bottom: 1.5rem;
+}
+
+/* Values Grid */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.value-card {
+    background: #ffffff;
+    border: 1px solid #e9f0f5;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.02);
+    text-align: center;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px -10px rgba(14, 65, 110, 0.15);
+}
+
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #2670b7;
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #0a2540;
+}
+
+.value-card p {
+    font-size: 1rem;
+    color: #425466;
+    line-height: 1.6;
+}
+
+/* Fun Mission/Vision Cards */
+.mission-card {
+    background: #ffffff;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    position: relative;
+    /* overflow: hidden; Removed to allow transform: scale to work without clipping if parent constraints */
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+    border: 2px solid transparent;
+    /* Reserve space for border */
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Pseudo-border for gradient effect */
+.mission-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 1.5rem;
+    padding: 2px;
+    /* Border thickness */
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.mission-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 50px -10px rgba(56, 189, 248, 0.25);
+}
+
+.mission-card:hover::before {
+    opacity: 1;
+}
+
+.mission-card:active {
+    transform: scale(0.95) translateY(-5px);
+    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.2);
+    transition-duration: 0.1s;
+}
+
+.mission-card .value-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    background: linear-gradient(135deg, #0ea5e9, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.5s ease;
+    /* Reset generic color */
+    color: transparent;
+}
+
+.mission-card:hover .value-icon {
+    transform: rotateY(180deg) scale(1.1);
+}
+
+.mission-card h3 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #0f172a;
+    transition: color 0.3s ease;
+}
+
+.mission-card:hover h3 {
+    color: #2563eb;
+}
+
+.mission-card p {
+    color: #64748b;
+    line-height: 1.7;
+    position: relative;
+    z-index: 2;
+}
+
+/* Background Blob Effect */
+.mission-card::after {
+    content: '';
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    top: -50%;
+    left: -50%;
+    opacity: 0;
+    transition: all 0.6s ease;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.mission-card:hover::after {
+    opacity: 1;
+    top: -20%;
+    left: -20%;
+    transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-page-wrapper {
+        padding: 60px 0;
+    }
+
+    .about-section h2 {
+        font-size: 2rem;
+    }
+}
